@@ -32,22 +32,22 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    private static double getWeight(int a,double b,double c){
-        double me = c * a;
-        double r = me/ b;
-        return r;
+    private static double getWeight(int k){
+        double e = 9.81;
+        double m = 3.86;
+        double me =k*m;
+        double r = me/e;
+         int r100 =(int)(r*100);
+        double delta =r*100-r100;
+        if (delta>=0.5)
+            return(r100+1)/100.0;
+        else
+        return r100/100.0;
      }
     public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int k = sc.nextInt();
-            double e = 9.81;
-            double m = 3.86;
-            double r=getWeight(k,e,m);
-        r = (r * 100);
-        r = Math.round(r);
-        r = r / 100;
-
-
+            double r=getWeight(k);
         System.out.println(r);
     }
 }
