@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson04;
+package by.it.goncharova.lesson02.goncharova.lesson04;
 
 import org.junit.Test;
 

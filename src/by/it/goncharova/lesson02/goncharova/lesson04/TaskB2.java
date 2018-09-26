@@ -1,4 +1,6 @@
-package by.it._tasks_.lesson04;
+package by.it.goncharova.lesson02.goncharova.lesson04;
+
+import java.util.Scanner;
 
 /*
 Таблица умножения
@@ -24,5 +26,21 @@ size прочитать c клавиатуры. Числа разделить п
 3. Программа должна выводить таблицу умножения size х size.
  */
 public class TaskB2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        int x = 1;
+        int y = 1;
+        while (x <= k) {
+            System.out.print(x + " ");
+            while (y <= k-1) {
+                y++;
+                System.out.print(x * y + " ");
+            }
+            x++;
+            y = 1;
+            System.out.println("");
+        }
+    }}
 
-}
+

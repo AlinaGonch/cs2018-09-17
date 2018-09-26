@@ -1,4 +1,6 @@
-package by.it._tasks_.lesson04;
+package by.it.goncharova.lesson02.goncharova.lesson04;
+
+import java.util.Scanner;
 
 /*
 Напишите программу которая спрашивает у пользователя:
@@ -37,6 +39,6 @@ package by.it._tasks_.lesson04;
 
 */
 public class TaskC1 {
-
-
 }
+
+

@@ -32,29 +32,29 @@ Lesson 03. Task B2. Нужно написать программу, котора
 Отрицательный дискриминант
 
 */
- /*class TaskB2
+ class TaskB2
 {
- public static double dis(int m, int n, int f) {
-        double v = n * n - 4 * m * f;
-        if (v > 0) {
-            return (-n + Math.sqrt(v)) / 2 * m;
-            return (-n + Math.sqrt(v)) / 2 * m;
-            if (v == 0) return (-n) / 2 * m;
-            else if (v < 0) return 0;
+ static double dis(int m, int n, int f) {
+       return (n * n - 4 * m * f);
         }
 
-    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a=sc.nextInt();
         int b=sc.nextInt();
         int c=sc.nextInt();
-        double x=dis(a,b,c);
-        if (x==0)
-            System.out.println("Отрицательный дискриминант");
-        else
-        System.out.println(x);
+        double d=dis(a,b,c);
+        if (d>0) {
+            double x1=(-b+Math.sqrt(d))/(2*a);
+            double x2=(-b-Math.sqrt(d))/(2*a);
+            System.out.println(x1+""+x2);
+
+        } else if (d==0) {
+            double x = (-b)/(2*a);
+            System.out.println(x);
+        }else System.out.println("Отрицательный дискриминант");
+
     }
     }
-*/
+
