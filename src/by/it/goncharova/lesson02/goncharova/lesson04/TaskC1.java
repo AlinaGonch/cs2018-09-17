@@ -39,6 +39,42 @@ import java.util.Scanner;
 
 */
 public class TaskC1 {
-}
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc= new Scanner(System.in);
+        int salary=sc.nextInt();
+
+        if ( salary<300||salary>3000)
+        System.out.println("Мы вам перезвоним!");
+        else {
+
+            for (int month =0;month<=14;month++)
+            { double pay=1.5*salary;
+                if(month<1||month>12)
+                    pay=0;
+                else
+                    if (month>=6||month<=8)
+                    {pay=salary;}
+                    String strMonth="месяц "+month;
+                switch (month){
+                    case 1:strMonth="январь";break;
+                    case 2:strMonth="февраль";break;
+                    case 3:strMonth="март";break;
+                    case 4:strMonth="апрель";break;
+                    case 5:strMonth="май";break;
+                    case 6:strMonth="июнь";break;
+                    case 7:strMonth="июль";break;
+                    case 8:strMonth="август";break;
+                    case 9:strMonth="сентябрь";break;
+                    case 10:strMonth="октябрь";break;
+                    case 11:strMonth="ноябрь";break;
+                    case 12:strMonth="декабрь";break;
+                }
+                System.out.println("За"+" "+strMonth+" "+"начислено"+" "+"$"+pay);
+            }
+
+        }
+    }}
+
 
 

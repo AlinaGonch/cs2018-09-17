@@ -1,4 +1,4 @@
-package by.it.goncharova.lesson02;
+package by.it.goncharova.lesson02.goncharova.lesson02;
 
 import java.util.Scanner;
 

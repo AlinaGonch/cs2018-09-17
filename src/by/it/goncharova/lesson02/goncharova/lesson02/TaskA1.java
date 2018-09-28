@@ -1,4 +1,4 @@
-package by.it.goncharova.lesson02;
+package by.it.goncharova.lesson02.goncharova.lesson02;
 /*
 напишите программу которая выводит на экран
 Hello world!

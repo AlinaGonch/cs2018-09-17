@@ -1,4 +1,4 @@
-package by.it.goncharova.lesson02;
+package by.it.goncharova.lesson02.goncharova.lesson02;
 /*
 Измените переменные и строку вывода в программе так,
 чтобы она рассчитывала и печатала следующее выражение
