@@ -43,15 +43,15 @@ public class TaskC1 {
         System.out.println("Какую вы хотите зарплату в $$$?");
         Scanner sc= new Scanner(System.in);
         int salary=sc.nextInt();
-
         if ( salary<300||salary>3000)
         System.out.println("Мы вам перезвоним!");
         else {
 
             for (int month =0;month<=14;month++)
-            { double pay=1.5*salary;
-                if(month<1||month>12)
-                    pay=0;
+            {double pay=1.5*salary;
+            if (month<6|| month>8){ if(month<1||month>12)
+            { pay=0;}
+                 pay=pay;}
                 else
                     if (month>=6||month<=8)
                     {pay=salary;}
@@ -71,6 +71,8 @@ public class TaskC1 {
                     case 12:strMonth="декабрь";break;
                 }
                 System.out.println("За"+" "+strMonth+" "+"начислено"+" "+"$"+pay);
+                if(pay==666) break;
+
             }
 
         }

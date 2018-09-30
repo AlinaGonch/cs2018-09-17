@@ -33,16 +33,12 @@ public class TaskB1 {
         int year=sc.nextInt();
         int x=365;
          int m=year%4;
-         int k=(year%100)/400;
+         int k=(year%100)%400;
          if (year>400)
             if (k==0)
                 System.out.println("количество дней в году:"+(x+1));
             else
                 System.out.println("количество дней в году:"+(x));
-        if (m==0)
-            System.out.println("количество дней в году:"+(x+1));
-        else
-            System.out.println("количество дней в году:"+(x));
 
     }
 
