@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TaskC1 {
+
     public static void main(String[] args) throws Exception {
         int[] m = new int[20];
         Scanner sc = new Scanner(System.in);
@@ -34,10 +35,17 @@ public class TaskC1 {
                 if (k % 3 == 0) a.add(k);
                 if (k % 2 == 0) b.add(k);
             } else c.add(k);
-        } }
-        static void printList(List < Integer> list){
-            for (Integer aList : list) System.out.println(aList);
-    }}
+        }
+
+        printList(a);
+        printList(b);
+        printList(c);
+    }
+
+    static void printList(List<Integer> list) {
+        for (Integer aList : list) System.out.println(aList);
+    }
+}
 
 
 
